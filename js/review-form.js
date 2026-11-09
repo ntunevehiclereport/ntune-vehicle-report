@@ -17,7 +17,8 @@
     if (!ok) { var f = form.querySelector(".invalid input, .invalid textarea"); if (f) f.focus(); return; }
     var btn = form.querySelector("button[type=submit]"); btn.disabled = true; btn.textContent = "Sending…";
     try {
-      await OM_HOOK.send("review", new FormData(form), { display_name: g("display_name"), city: g("city"), rating: Number(rating), review_text: g("review_text"), email_private: em, published: false });
+      var r = await OM_HOOK.send("review", new FormData(form), { display_name: g("display_name"), city: g("city"), rating: Number(rating), review_text: g("review_text"), email_private: em, published: false });
+      var note = document.getElementById("review-draft-note"); if (note) note.hidden = !!(r && r.live);
       form.hidden = true; var t = document.getElementById("review-thanks"); t.classList.add("show"); t.setAttribute("tabindex", "-1"); t.focus();
     } catch (e) { btn.disabled = false; btn.textContent = "Send my review"; alert("Something went wrong. Please try again."); }
   });
