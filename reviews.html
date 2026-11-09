@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NTune Vehicle Report | Reviews</title>
+<meta name="description" content="NTune Vehicle Report: reviews from people who have used a report. Reviews are checked before they appear.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b0a08">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/png" href="assets/img/favicon-gold-64.png">
+</head>
+<body class="has-sticky">
+<a class="skip" href="#main">Skip to content</a>
+<div class="test-banner" role="note"><span class="new">TEST</span><strong>Free test version.</strong> Reports are free while we test with a small group. This site is a draft and is not open to the public yet.</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/img/ntune-vr-gold-logo-300.png" alt="NTune Vehicle Report" width="134" height="56"><span class="brand-name"><small>The online mechanic for the DIYer</small></span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span aria-hidden="true">☰</span> Menu</button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a href="index.html">Home</a><a href="index.html#how-it-works">How it works</a><a href="sample-report.html">Sample report</a><a href="reviews.html" aria-current="page">Reviews</a><a href="disclaimer.html">Disclaimer</a>
+      <a class="btn btn-sm" href="get-report.html">Get your free report</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<div class="page-head"><div class="container">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Reviews</div>
+  <h1>Reviews</h1>
+  <p class="lead">Honest reviews from people who've used a report. We're testing with a small group first, so this page is just getting started.</p>
+</div></div>
+
+<section style="padding-top:36px">
+  <div class="container grid grid-2" style="align-items:start;gap:36px">
+    <div>
+      <h2>What testers say</h2>
+      <div class="review-list" id="review-list">
+        <div class="empty-state">
+          <div class="big" aria-hidden="true">★★★★★</div>
+          <h3>No public reviews yet</h3>
+          <p class="muted">Our first testers are friends and family trying the report before it opens up. Once they've received their reports and left reviews, approved reviews will show here.</p>
+        </div>
+      </div>
+      <div class="notice blue" style="margin-top:20px">
+        <h3>How reviews work</h3>
+        <ul style="margin:0;padding-left:1.1em">
+          <li>Reviews are checked before they appear on the site, so yours won't show right away.</li>
+          <li>We post reviews as written. We don't edit what you say, though we may leave out personal details like phone numbers or addresses.</li>
+          <li>We don't pay for reviews or offer anything in exchange for a good one.</li>
+          <li>Your email (if you give it) is never published. It's only used to follow up about your review.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="leave-a-review">
+      <form id="review-form" class="card" novalidate style="padding:26px">
+        <h2 style="font-size:1.6rem">Leave a review</h2>
+        <p class="muted small">Used a report? Tell us how it went, good or bad. Honest feedback is what makes this better.</p>
+        <div class="field" id="r-name"><label for="display_name">Name to show <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="display_name" name="display_name" maxlength="40" autocomplete="given-name" placeholder="e.g. Sam R.">
+          <span class="help">First name and last initial is plenty.</span><div class="error" role="alert"></div></div>
+        <div class="field"><label for="r-city">City <span class="opt">(optional)</span></label>
+          <input type="text" id="r-city" name="city" maxlength="60" placeholder="e.g. Chula Vista"></div>
+        <div class="field" id="r-rating">
+          <span id="rating-label" style="display:block;font-weight:600;margin-bottom:4px">Rating <span class="req" aria-hidden="true">*</span></span>
+          <div class="stars" role="radiogroup" aria-labelledby="rating-label">
+            <input type="radio" id="s5" name="rating" value="5"><label for="s5" title="5 stars">★<span class="sr-only">5 stars</span></label>
+            <input type="radio" id="s4" name="rating" value="4"><label for="s4" title="4 stars">★<span class="sr-only">4 stars</span></label>
+            <input type="radio" id="s3" name="rating" value="3"><label for="s3" title="3 stars">★<span class="sr-only">3 stars</span></label>
+            <input type="radio" id="s2" name="rating" value="2"><label for="s2" title="2 stars">★<span class="sr-only">2 stars</span></label>
+            <input type="radio" id="s1" name="rating" value="1"><label for="s1" title="1 star">★<span class="sr-only">1 star</span></label>
+          </div><div class="error" role="alert"></div></div>
+        <div class="field" id="r-text"><label for="review_text">Your review <span class="req" aria-hidden="true">*</span> <span class="counter" id="review-count">0/1500</span></label>
+          <textarea id="review_text" name="review_text" rows="6" maxlength="1500" placeholder="What was your vehicle doing, was the report clear, and did it help you decide what to do next?"></textarea><div class="error" role="alert"></div></div>
+        <div class="field" id="r-email"><label for="r-email-in">Email <span class="opt">(optional, never published)</span></label>
+          <input type="email" id="r-email-in" name="email" maxlength="120" autocomplete="email" inputmode="email">
+          <span class="help">Only if you're OK with us following up about your review.</span><div class="error" role="alert"></div></div>
+        <div class="field" id="r-agree"><label class="check"><input type="checkbox" name="consent" value="yes"><span>This is my honest experience, and I'm OK with my name, city, rating and review being shown on this site once it's checked.</span></label><div class="error" role="alert"></div></div>
+        <button class="btn" type="submit" style="width:100%">Send my review</button>
+      </form>
+      <div id="review-thanks" class="thanks" aria-live="polite">
+        <div class="card" style="border-top:5px solid #1f8a4c">
+          <span class="tag" style="background:#e3f4ea;color:#1f8a4c">Review received</span>
+          <h2 style="font-size:1.6rem">Thank you for your review.</h2>
+          <p>We've received it. Reviews are checked before they appear, so yours will show on the site after it's been reviewed. It isn't public yet.</p>
+          <p class="notice plain small" style="margin:14px 0 0" id="review-draft-note"><b>Local-only note:</b> this browser saved a copy of your review because the live send did not run. Nothing was emailed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="flex-direction:column;align-items:flex-start;gap:12px"><img class="brand-logo" src="assets/img/ntune-vr-gold-logo-480.png" alt="NTune Vehicle Report" width="200" height="83"><span class="brand-name"><small>The online mechanic for the DIYer</small></span></a>
+        <p style="margin-top:14px;max-width:420px">Plain-language vehicle reports built from your codes, your symptoms and your shop's scan. No ads and no required upsells.</p>
+      </div>
+      <div><h4>Site</h4><ul>
+        <li><a href="get-report.html">Get your report</a></li>
+        <li><a href="sample-report.html">Sample report</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="index.html#how-it-works">How it works</a></li></ul></div>
+      <div><h4>The fine print</h4><ul>
+        <li><a href="disclaimer.html">Disclaimer</a></li></ul>
+        <p class="small" style="margin-top:12px">General information only. Not a vehicle inspection and not a replacement for a good diagnostic tool.</p></div>
+    </div>
+    <div class="footer-base">
+      <span>© <span id="year">2026</span> NTune Vehicle Report · Free test version (draft)</span>
+      <span>A project from NTune Mobile Auto Repair</span>
+    </div>
+  </div>
+</footer>
+<div class="sticky-cta"><a class="btn" href="get-report.html">Get your free report</a></div>
+<script src="js/main.js"></script><script src="js/submission-hook.js"></script><script src="js/review-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NTune Vehicle Report | Get your free report</title>
+<meta name="description" content="NTune Vehicle Report: enter your vehicle, trouble codes and symptoms, and upload your shop's diagnostic scan for a free plain-language report during testing.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b0a08">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/png" href="assets/img/favicon-gold-64.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="test-banner" role="note"><span class="new">TEST</span><strong>Free test version.</strong> Reports are free while we test with a small group. This site is a draft and is not open to the public yet.</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/img/ntune-vr-gold-logo-300.png" alt="NTune Vehicle Report" width="134" height="56"><span class="brand-name"><small>The online mechanic for the DIYer</small></span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span aria-hidden="true">☰</span> Menu</button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a href="index.html">Home</a><a href="index.html#how-it-works">How it works</a><a href="sample-report.html">Sample report</a><a href="reviews.html">Reviews</a><a href="disclaimer.html">Disclaimer</a>
+      <a class="btn btn-sm" href="get-report.html" aria-current="page">Get your free report</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<div class="rm-hero"><div class="container">
+  <h1>Get your free <span class="hl">plain-language</span> vehicle report.</h1>
+  <p class="lead">Tell us about your vehicle and what it's doing. The more you give us (especially a scan from your shop), the more useful your report can be.</p>
+</div></div>
+
+<div class="container">
+  <div class="rm-familiar">
+    <span class="eyebrow">Sound familiar?</span>
+    <ul class="symptoms">
+      <li>The check engine light came on and you're not sure it's safe to keep driving.</li>
+      <li>Your code reader shows a code and nothing about what to do next.</li>
+      <li>A search turns up ten possible causes and no order to check them in.</li>
+      <li>You'd rather know what you're dealing with before you buy parts.</li>
+    </ul>
+    <p style="margin:0"><b>A report puts your codes, symptoms and scan into plain language and lists next steps easiest first.</b></p>
+  </div>
+
+  <div class="rm-get" id="what-you-get-in-the-report">
+    <div>
+      <div class="shot"><span class="stamp">SAMPLE</span><img src="assets/img/sample-report-shot.png" alt="Sample NTune Vehicle Report for a made-up 2014 Honda Civic: code P0302 explained, next steps easiest first, and safety recalls" width="900" height="1200" loading="lazy"></div>
+      <p class="shot-cap">SAMPLE: made-up vehicle and owner. <a href="sample-report.html">See the full sample report</a>.</p>
+    </div>
+    <div>
+      <span class="eyebrow">What you get in the report</span>
+      <h2 style="font-size:clamp(1.4rem,3vw,1.9rem)">Everything for your exact vehicle, with sources.</h2>
+      <ul class="checklist">
+        <li>A plain-language read of your codes, symptoms and scan</li>
+        <li>Next steps, easiest first</li>
+        <li>Safety recalls for your year, make and model</li>
+        <li>Common areas owners report</li>
+        <li>Your owner's manual link, maintenance and care tips</li>
+        <li>Mobile mechanics, parts stores and shops near your city or ZIP</li>
+        <li><b>Free extra:</b> a one-page check engine light first-steps checklist (PDF)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section style="padding:36px 0 0">
+<div class="container">
+  <div class="rm-wrap">
+    <form id="report-form" class="rm-card" novalidate data-total="9">
+      <div class="rm-progress" aria-hidden="true">
+        <div class="rm-progress-top"><span id="rm-count">Step 1 of 9</span><span id="rm-pct">0%</span></div>
+        <div class="rm-track"><div class="rm-bar" id="rm-bar"></div></div>
+      </div>
+      <p class="sr-only" id="rm-live" aria-live="polite"></p>
+      <div id="form-summary" class="form-summary" tabindex="-1" role="alert">Please fix the highlighted fields.</div>
+      <fieldset class="rm-step" data-step="1" aria-labelledby="q1">
+        <h2 class="rm-q" id="q1" tabindex="-1">What's your <strong>first name?</strong></h2>
+        <div class="field" id="f-first"><label for="first_name" class="sr-only">First name</label>
+          <input type="text" id="first_name" name="first_name" autocomplete="given-name" maxlength="60" placeholder="First name" required><div class="error" role="alert"></div></div>
+        <div class="rm-nav"><button type="button" class="btn" data-next>Let's start</button></div>
+      </fieldset><fieldset class="rm-step" data-step="2" aria-labelledby="q2">
+        <h2 class="rm-q" id="q2" tabindex="-1">Where should we <strong>email</strong> your report?</h2>
+        <div class="field" id="f-email"><label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" inputmode="email" maxlength="120" placeholder="Email address" required aria-describedby="email-help">
+          <span class="help" id="email-help">We need this to send your report. Replies to the report email aren't monitored.</span><div class="error" role="alert"></div></div>
+        <div class="rm-nav"><button type="button" class="btn-back" data-back>Back</button><button type="button" class="btn" data-next>Continue</button></div>
+      </fieldset><fieldset class="rm-step" data-step="3" aria-labelledby="q3">
+        <h2 class="rm-q" id="q3" tabindex="-1">What are you <strong>driving?</strong></h2>
+        <div class="row row-3">
+          <div class="field" id="f-year"><label for="year-input">Year <span class="req" aria-hidden="true">*</span></label>
+            <input type="number" id="year-input" name="year" inputmode="numeric" min="1981" max="2027" placeholder="2014" required><div class="error" role="alert"></div></div>
+          <div class="field" id="f-make"><label for="make">Make <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="make" name="make" maxlength="40" placeholder="Honda" required list="makes"><div class="error" role="alert"></div></div>
+          <div class="field" id="f-model"><label for="model">Model <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="model" name="model" maxlength="60" placeholder="Civic" required><div class="error" role="alert"></div></div>
+        </div>
+        <datalist id="makes"><option>Acura</option><option>Audi</option><option>BMW</option><option>Buick</option><option>Cadillac</option><option>Chevrolet</option><option>Chrysler</option><option>Dodge</option><option>Ford</option><option>GMC</option><option>Honda</option><option>Hyundai</option><option>Infiniti</option><option>Jeep</option><option>Kia</option><option>Lexus</option><option>Lincoln</option><option>Mazda</option><option>Mercedes-Benz</option><option>Mitsubishi</option><option>Nissan</option><option>Ram</option><option>Subaru</option><option>Tesla</option><option>Toyota</option><option>Volkswagen</option><option>Volvo</option></datalist>
+        <div class="rm-nav"><button type="button" class="btn-back" data-back>Back</button><button type="button" class="btn" data-next>Continue</button></div>
+      </fieldset><fieldset class="rm-step" data-step="4" aria-labelledby="q4">
+        <h2 class="rm-q" id="q4" tabindex="-1">Got your <strong>VIN and mileage?</strong></h2><p class="rm-sub">Both are optional. Skip this if you don't have them handy.</p>
+        <div class="field" id="f-vin"><label for="vin">VIN <span class="opt">(optional)</span> <span class="counter" id="vin-count">0/17</span></label>
+          <input type="text" id="vin" name="vin" maxlength="17" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="vin-help">
+          <span class="help" id="vin-help">17 characters. Find it on the dashboard (lower corner of the windshield, driver's side) or on your registration. Leave it blank if you don't have it.</span><div class="error" role="alert"></div></div>
+        <div class="field" id="f-miles"><label for="mileage">Mileage <span class="opt">(optional)</span></label>
+          <input type="number" id="mileage" name="mileage" inputmode="numeric" min="0" max="999999" placeholder="e.g. 128000">
+          <span class="help">Helps match maintenance items to where your vehicle is now.</span><div class="error" role="alert"></div></div>
+        <div class="rm-nav"><button type="button" class="btn-back" data-back>Back</button><button type="button" class="btn" data-next>Continue</button><button type="button" class="btn-link" data-skip>Skip</button></div>
+      </fieldset><fieldset class="rm-step" data-step="5" aria-labelledby="q5">
+        <h2 class="rm-q" id="q5" tabindex="-1">Where's the <strong>vehicle?</strong></h2>
+        <div class="field" id="f-city"><label for="city_or_zip">City or ZIP <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="city_or_zip" name="city_or_zip" autocomplete="postal-code" maxlength="80" placeholder="e.g. San Diego, CA or 92101" required aria-describedby="city-help">
+          <span class="help" id="city-help">Used only to look up mobile mechanics, parts stores and shops near you. Please don't enter a street address.</span><div class="error" role="alert"></div></div>
+        <div class="rm-nav"><button type="button" class="btn-back" data-back>Back</button><button type="button" class="btn" data-next>Continue</button></div>
+      </fieldset><fieldset class="rm-step" data-step="6" aria-labelledby="q6">
+        <h2 class="rm-q" id="q6" tabindex="-1">Got a <strong>scan</strong> from your shop?</h2><p class="rm-sub"><b>For best results, upload the diagnostic scan results from your local auto repair shop.</b> A full scan shows details a basic code reader can miss. No scan? Skip this step.</p>
+        <div class="field" id="f-files">
+          <div class="dropzone" id="dropzone">
+            <label for="scan-files" style="margin:0">Attach scan files <span class="opt">(optional, up to 5 files, 10 MB each)</span></label>
+            <span class="help" style="margin-top:4px">PDF, photos of a printout or screen (JPG, PNG, HEIC), or scan-tool exports (CSV, TXT, XML, JSON, HTML). Drag files here or choose them.</span>
+            <input type="file" id="scan-files" name="scan_files" multiple accept=".pdf,.jpg,.jpeg,.png,.heic,.heif,.webp,.gif,.txt,.csv,.xml,.json,.html,.htm,.xls,.xlsx,.doc,.docx,application/pdf,image/*,text/plain,text/csv">
+            <ul class="file-list" id="file-list" aria-live="polite"></ul>
+          </div>
+          <div class="error" role="alert"></div>
+        </div>
+        <div class="rm-nav"><button type="button" class="btn-back" data-back>Back</button><button type="button" class="btn" data-next>Continue</button><button type="button" class="btn-link" data-skip>Skip</button></div>
+      </fieldset><fieldset class="rm-step" data-step="7" aria-labelledby="q7">
+        <h2 class="rm-q" id="q7" tabindex="-1">What's the vehicle <strong>doing?</strong></h2><p class="rm-sub">Fill in what you have. Codes, symptoms, a scan file, or any mix of the three works.</p>
+        <div id="f-codes">
+          <div class="field"><label for="codes">Trouble codes <span class="opt">(if you have them)</span></label>
+            <textarea id="codes" name="codes" rows="3" maxlength="2000" placeholder="e.g. P0300, P0302, C1234" aria-describedby="codes-help" style="min-height:84px;font-family:ui-monospace,Menlo,Consolas,monospace"></textarea>
+            <span class="help" id="codes-help">Type each code as it appears on your reader (a letter P, B, C or U followed by four characters). Separate codes with commas or new lines. Include pending or history codes if your reader shows them, and note which is which.</span></div>
+          <div class="field"><label for="symptoms">What is the vehicle doing?</label>
+            <textarea id="symptoms" name="symptoms" rows="5" maxlength="4000" aria-describedby="sym-help" placeholder="e.g. Shakes at stoplights and the check engine light flashed once getting on the freeway. Started last week after rain. Worse when cold."></textarea>
+            <span class="help" id="sym-help">Noises, smells, warning lights, how it drives, when it happens (cold start, highway, turning, braking), when it started, and anything already replaced or tried.</span></div>
+          <div class="error" role="alert"></div>
+        </div>
+        <div class="rm-nav"><button type="button" class="btn-back" data-back>Back</button><button type="button" class="btn" data-next>Continue</button></div>
+      </fieldset><fieldset class="rm-step" data-step="8" aria-labelledby="q8">
+        <h2 class="rm-q" id="q8" tabindex="-1">Your <strong>report header</strong></h2><p class="rm-sub">Optional. Handy for shops and mobile techs sharing a report with a customer.</p>
+        <div class="field" id="f-header"><label for="header_name">Want your company or name on the header? <span class="opt">(optional)</span></label>
+          <input type="text" id="header_name" name="header_name" maxlength="80" autocomplete="organization" placeholder="e.g. Sam's Garage or Sam Rivera" aria-describedby="header-help">
+          <span class="help" id="header-help">Leave this blank for the standard NTune Vehicle Report header. If you fill it in, your report shows this name at the top, with a small note in the footer that it was made with the NTune Vehicle Report.</span><div class="error" role="alert"></div></div>
+        <div class="rm-nav"><button type="button" class="btn-back" data-back>Back</button><button type="button" class="btn" data-next>Continue</button><button type="button" class="btn-link" data-skip>Skip</button></div>
+      </fieldset><fieldset class="rm-step" data-step="9" aria-labelledby="q9">
+        <h2 class="rm-q" id="q9" tabindex="-1">Last step: <strong>check and send.</strong></h2>
+        <div class="rm-summary" id="rm-summary" aria-live="polite"></div>
+        <div class="field" id="f-agree">
+          <label class="check"><input type="checkbox" name="agree" value="yes" required>
+            <span>I've read the <a href="disclaimer.html" target="_blank" rel="noopener">disclaimer</a>. I understand this report is general information, is not a replacement for a good diagnostic tool or an in-person diagnosis by a qualified technician, and that results are best when I upload my shop's diagnostic scan. <span class="req" aria-hidden="true">*</span></span></label>
+          <div class="error" role="alert"></div>
+        </div>
+        <div class="rm-nav"><button type="button" class="btn-back" data-back>Back</button><button class="btn" type="submit">Get my free report</button></div>
+      </fieldset>
+    </form>
+
+    <div id="thanks" class="thanks" aria-live="polite">
+      <div class="rm-card">
+        <div class="tick" aria-hidden="true">✓</div>
+        <span class="tag" style="background:#e3f4ea;color:#1f8a4c">Request received</span>
+        <h2>Thanks, <span id="thanks-name"></span>.</h2>
+        <p>We've got your request for your <b id="thanks-vehicle"></b>. Your report will be emailed to <b id="thanks-email"></b>. This is a test version and reports are prepared one at a time, so timing can vary.</p>
+        <p>While you wait, check your exact VIN for open recalls at <a href="https://www.nhtsa.gov/recalls" target="_blank" rel="noopener">nhtsa.gov/recalls</a>.</p>
+        <p>After your report arrives, we'd value an honest review: <a href="reviews.html#leave-a-review">leave a review</a>.</p>
+        <p id="thanks-draft" class="notice plain small" style="margin-top:14px;text-align:left"><b>Local-only note:</b> this browser saved a copy of your request because the live send did not run. Nothing was emailed.</p>
+      </div>
+    </div>
+
+    <p class="rm-under">Free while we test. No account needed.</p>
+    <!-- PLACEHOLDER (Timothy, 2026-11-09): "Takes about X minutes" line. X gets set from real tester timings during testing.
+         Stays hidden so no invented number ships. To turn on: replace [X] with the measured figure and remove `hidden`. -->
+    <p class="rm-under" hidden data-placeholder="form-duration">Takes about [X] minutes.</p>
+  </div>
+  <ul class="rm-trust">
+    <li>Every item linked to its source</li>
+    <li>Recalls, owner complaints and maintenance for your exact vehicle</li>
+  </ul>
+  <p class="rm-fine">We don't ask for your street address, phone number or payment. Your information is never sold to third parties or used to target ads. See the <a href="disclaimer.html#your-information">disclaimer</a>.</p>
+  <div class="notice narrow" style="margin:26px auto 0">
+    <p class="small"><b>Not a replacement for a good diagnostic tool.</b> For best results, upload the diagnostic scan results from your local auto repair shop. <a href="sample-report.html">See a sample report</a>.</p>
+  </div>
+</div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="flex-direction:column;align-items:flex-start;gap:12px"><img class="brand-logo" src="assets/img/ntune-vr-gold-logo-480.png" alt="NTune Vehicle Report" width="200" height="83"><span class="brand-name"><small>The online mechanic for the DIYer</small></span></a>
+        <p style="margin-top:14px;max-width:420px">Plain-language vehicle reports built from your codes, your symptoms and your shop's scan. No ads and no required upsells.</p>
+      </div>
+      <div><h4>Site</h4><ul>
+        <li><a href="get-report.html">Get your report</a></li>
+        <li><a href="sample-report.html">Sample report</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="index.html#how-it-works">How it works</a></li></ul></div>
+      <div><h4>The fine print</h4><ul>
+        <li><a href="disclaimer.html">Disclaimer</a></li></ul>
+        <p class="small" style="margin-top:12px">General information only. Not a vehicle inspection and not a replacement for a good diagnostic tool.</p></div>
+    </div>
+    <div class="footer-base">
+      <span>© <span id="year">2026</span> NTune Vehicle Report · Free test version (draft)</span>
+      <span>A project from NTune Mobile Auto Repair</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script><script src="js/submission-hook.js"></script><script src="js/report-form.js"></script>
+</body>
+</html>
