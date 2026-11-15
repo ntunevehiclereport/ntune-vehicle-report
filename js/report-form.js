@@ -163,7 +163,7 @@
       document.getElementById("thanks-draft").hidden = r.live;
       form.hidden = true; var t = document.getElementById("thanks"); t.classList.add("show"); t.setAttribute("tabindex", "-1"); t.focus(); window.scrollTo(0, t.getBoundingClientRect().top + window.scrollY - 110);
     } catch (e) {
-      btn.disabled = false; btn.textContent = "Get my free report";
+      btn.disabled = false; btn.textContent = "Get my report";
       summary.textContent = "Something went wrong sending your request. Please try again in a moment."; summary.classList.add("show");
     }
   });
