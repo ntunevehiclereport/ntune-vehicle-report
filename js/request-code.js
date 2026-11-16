@@ -13,7 +13,9 @@
   form.addEventListener("submit", function () {
     try {
       sessionStorage.setItem("ntvr_last_request", JSON.stringify({
-        code: code, email: (form.elements["email"] || {}).value || "", first_name: (form.elements["first_name"] || {}).value || "" }));
+        code: code, email: (form.elements["email"] || {}).value || "", first_name: (form.elements["first_name"] || {}).value || "",
+        // 2026-11-15 18:35 PT: only a yes/no flag; the promo code itself is never stored in the browser.
+        promo: !!(((form.elements["promo_code"] || {}).value || "").trim()) }));
     } catch (e) {}
   }, true);   // capture phase: runs before report-form.js posts the form
 })();

@@ -12,7 +12,7 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="test-banner" role="note"><span class="new">TEST</span><strong>Test version.</strong> <!-- PENDING-TIMOTHY wording --> Your first report is free. After that, each report is <span data-price>$1.33</span>. This site is a draft and is not open to the public yet.</div>
+<div class="test-banner" role="note"><span class="new">TEST</span><strong>Test version.</strong> <!-- APPROVED Timothy 2026-11-15 5:14 PM PT --> Your first report is free. After that, each report is just <span data-price>$1.33</span> (promotional offer). This site is a draft and is not open to the public yet.</div>
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html"><img class="brand-mark" src="assets/img/ntune-vr-gold-logo-300.png" alt="NTune Vehicle Report" width="134" height="56"><span class="brand-name"><small>The online mechanic for the DIYer</small></span></a>
@@ -32,12 +32,12 @@
   <div class="container" style="max-width:640px;text-align:center">
     <span class="tag" style="background:#e3f4ea;color:#1f8a4c">Request received</span>
     <h1 style="font-size:2.2rem;margin:18px 0 12px">Thank you — your report request is in.</h1>
-    <p class="lead" style="margin:0 auto 18px">We're putting your plain-language report together. It will arrive by email, and <!-- PENDING-TIMOTHY wording --> If this is your first report with this email address, it's free and you should receive it typically within 10 minutes. Replies to that email aren't monitored.</p>
+    <p class="lead" style="margin:0 auto 18px">We're putting your plain-language report together. It will arrive by email, and <!-- APPROVED Timothy 2026-11-15 5:14 PM PT --> if this is your first report, it's free and you should receive it typically within 10 minutes. Replies to that email aren't monitored.</p>
     <div id="pay-box" class="notice" style="margin:18px auto;text-align:left">
-      <p style="margin:0 0 8px"><b>Already used your free report?</b> Each additional report is <span data-price>$1.33</span>. Your report is built once your payment goes through, and it typically arrives within 10 minutes after that.</p>
+      <p style="margin:0 0 8px"><b>Already used your free report?</b> Each additional report is just <span data-price>$1.33</span> (promotional offer). Your report is built once your payment goes through, and it typically arrives within 10 minutes after that.</p>
       <p style="margin:0 0 12px" class="small">Your request code: <b id="req-code">(see your confirmation)</b></p>
-      <p style="margin:0"><a class="btn" id="pay-link" href="pay.html">Pay <span data-price>$1.33</span> on Square's secure checkout</a></p>
-      <p class="small muted" style="margin:10px 0 0">Not sure? If this email has already had a free report, we'll also email you a payment link. If it hasn't, you don't need to pay.</p>
+      <p style="margin:0"><a class="btn" id="pay-link" href="pay.html">Pay <span data-price>$1.33</span> (promotional offer) on Square's secure checkout</a></p>
+      <p class="small muted" style="margin:10px 0 0">Not sure? If a payment is needed, we'll also email you a payment link.</p>
     </div>
     <p class="muted small">No account needed.</p>
     <p style="margin-top:28px"><a class="btn" href="index.html">Back to home</a>
@@ -74,7 +74,10 @@
 <script>
 (function(){ try { var r = JSON.parse(sessionStorage.getItem("ntvr_last_request") || "null");
   if (r && r.code) { document.getElementById("req-code").textContent = r.code;
-    document.getElementById("pay-link").href = "pay.html?code=" + encodeURIComponent(r.code); } } catch (e) {} })();
+    document.getElementById("pay-link").href = "pay.html?code=" + encodeURIComponent(r.code); }
+  // 2026-11-15 18:35 PT: a promo code was entered, so hide the pay prompt. If the box rejects the code,
+  // the approved payment-link email is the fallback.
+  if (r && r.promo) { document.getElementById("pay-box").hidden = true; } } catch (e) {} })();
 </script>
 </body>
 </html>

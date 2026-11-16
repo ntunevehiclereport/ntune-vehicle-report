@@ -3,7 +3,7 @@
  * This file only knows where the Worker is; it fills every [data-price] element from GET /price.
  * FALLBACK_DISPLAY is shown only if the Worker can't be reached. Keep it equal to PRICE_CENTS. */
 window.NTVR_PAY = (function () {
-  var WORKER_URL = "https://ntvr-pay.REPLACE_SUBDOMAIN.workers.dev";   // set after Timothy deploys
+  var WORKER_URL = "https://ntvr-pay.ntunemobileautorepair.workers.dev";   // set 2026-11-15 18:35 PT (deployed Worker)
   var FALLBACK_DISPLAY = "$1.33";
   function fill(txt) { document.querySelectorAll("[data-price]").forEach(function (el) { el.textContent = txt; }); }
   fill(FALLBACK_DISPLAY);
